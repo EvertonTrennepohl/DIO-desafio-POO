@@ -21,8 +21,9 @@ public class Dev {
 		if(conteudo.isPresent()) {
 			this.conteudosConcluidos.add(conteudo.get());
 			this.conteudosInscritos.remove(conteudo.get());
+			System.out.println(conteudo.get().getTitulo() + " concluÃ­do!");
 		} else {
-			System.err.println("Você não está matriculado em nenhum conteúdo!");
+			System.err.println("VocÃª nÃ£o estÃ¡ matriculado em nenhum conteÃºdo!");
 		}
 	}
 	
